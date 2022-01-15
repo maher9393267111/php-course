@@ -9,58 +9,15 @@
 
 
 
-
-
  if (isset($_POST['submit'])){
 
 updateuser();
 
 
 
-//     echo 'the button is submitted ';
-
-// $username =$_POST['name'];
-
-// $password =$_POST['password'];
-
-
-// $id= $_POST['id'];
-
-
-// $sql = 'UPDATE nani5 SET ';
-
-
-// // $sql = "UPDATE nani5 SET name='".$username."', password='".$password."' where id=".$id;
-
-
-// echo  $password;
-
-
-
-// $sql .= "name = '$username', " ;
-
-// $sql .= "password = '$password' " ;
-
-// $sql .= "WHERE id = $id " ;
-
-
-
-
-
-// if ($connection->query($sql) === TRUE) {
-//     echo "New record created successfully";
-//   } else {
-//     echo "Error: " . $sql . "<br>" . $connection->error;
-//   }
-
-
-
-
 
 
  }
-
-
 
 
 
@@ -73,18 +30,7 @@ updateuser();
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edit php</title>
-
-<?php  include'bootstrap.php' ?>
-
-</head>
-<body>
+<?php include 'include/header.php'; ?>
 
 
 <form action="edit.php"  method='post'>
@@ -128,5 +74,6 @@ showalldata();
 </div>
 </form>
 
-</body>
-</html>
+
+
+<?php include 'include/footer.php'; ?>
